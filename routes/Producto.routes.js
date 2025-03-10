@@ -3,7 +3,7 @@ const multiparty=require("connect-multiparty");
 
 const productosController=require("../controllers/productos.controller");
 
-const md_mparty=multiparty();
+const md_mparty=multiparty({uploadDir:"./uploads"});
 const api=express.Router();
 
 api.post("/createproduct",[md_mparty], productosController.createProducto);
