@@ -5,11 +5,13 @@
   "main": "index.js",
   "scripts": {
     "test": "mongoose,nodemon,express,cors",
-    "dev":"nodemon index.js"
+    "dev": "nodemon index.js"
   },
   "author": "danydev",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.20.3",
+    "connect-multiparty": "^2.2.0",
     "cors": "^2.8.5",
     "express": "^4.21.2",
     "mongoose": "^8.12.0"
