@@ -14,8 +14,8 @@ app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json());
 
 //Configurar carpeta de carga de files
-app.use(express.static("uploads"));
- //app.use(express.static(path.join(__dirname,'uploads')));
+//app.use(express.static("uploads"));
+ app.use(express.static(path.join(__dirname,'uploads')));
 
 //Configuracion de cors
 app.use(cors());

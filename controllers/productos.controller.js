@@ -5,11 +5,11 @@ async function createProducto(req, res) {
   const productos = new Producto(req.body);
   //console.log(productos);
    try {
-    if(req.files.imagep){
+     if(req.files.imagep){
       const imagePath=image.getFilePath(req.files.imagep);
       productos.imagep=imagePath;
      }
-
+ 
     const datos = await productos.save();
     res.status(200).send(datos);
   } catch (error) {
